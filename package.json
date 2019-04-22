@@ -4,6 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "animejs": "^3.0.1"
+    "animejs": "^3.0.1",
+    "jquery": "^3.4.0",
+    "typed.js": "^2.0.10"
   }
 }
