@@ -1,0 +1,46 @@
+html,body {
+  width: 100%;
+}
+
+@mixin row {
+  display: flex;
+  justify-content: center;
+}
+.row{
+  @include row
+}
+.space-between{
+  justify-content: space-between;
+}
+
+.Main{
+  width: 1200px;
+  height: 100vh;
+  // background: rgba(65, 105, 225, 0.123);
+  margin: 0 auto;
+
+  .p1{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .parent {
+      display: flex;
+      width: inherit;
+      justify-content: space-around;
+
+      .child {
+        width: 4px;
+        height: 4px;
+        background: rgba(119, 140, 167, 0.425);
+        border-radius: 50%;
+        margin: 10px;
+      }
+    }
+    .avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+  }
+}

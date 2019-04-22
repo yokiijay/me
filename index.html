@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>于谦</title>
+  <link href="https://cdn.bootcss.com/minireset.css/0.0.2/minireset.css" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <div class="Main">
+    <div class="p1">
+      <div class="row space-between">
+        <img class='avatar' src="https://s2.ax1x.com/2019/04/22/Ekt0VP.jpg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <script src="node_modules/animejs/lib/anime.min.js"></script>
+  <script>
+    const dot = {
+      create: function(row,col,grandParent){
+        for(let i = 0;i<col;i++){
+          const parent = document.createElement('div')
+          parent.className = 'parent'
+          for(let i = 0;i<row;i++){
+            const child = document.createElement('div')
+            child.className = 'child'
+            parent.appendChild(child)
+          }
+          
+          document.querySelector(grandParent).appendChild(parent)
+        }
+      }
+    }
+    
+    dot.create(20,10,'.p1')
+    
+    anime({
+      targets: '.parent>.child',
+      scale: [
+        {value: .1, duration: 500, easing: 'easeOutSine'},
+        {value: 1, duration: 1200, easing: 'easeInOutQuad'}
+      ],
+      delay: anime.stagger(200, {grid: [20, 10], from: 'center'}),
+      loop: true
+    })
+  </script>
+</body>
+</html>

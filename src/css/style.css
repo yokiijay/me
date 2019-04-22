@@ -1,0 +1,35 @@
+html, body {
+  width: 100%; }
+
+.row {
+  display: flex;
+  justify-content: center; }
+
+.space-between {
+  justify-content: space-between; }
+
+.Main {
+  width: 1200px;
+  height: 100vh;
+  margin: 0 auto; }
+  .Main .p1 {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .Main .p1 .parent {
+      display: flex;
+      width: inherit;
+      justify-content: space-around; }
+      .Main .p1 .parent .child {
+        width: 4px;
+        height: 4px;
+        background: rgba(119, 140, 167, 0.425);
+        border-radius: 50%;
+        margin: 10px; }
+    .Main .p1 .avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%; }
+
+/*# sourceMappingURL=style.css.map */
