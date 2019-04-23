@@ -12,14 +12,24 @@ html, body {
   display: flex;
   justify-content: center; }
 
+.row-column {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
 .space-between {
   justify-content: space-between; }
 
 .item-center {
   align-items: center; }
 
+a {
+  color: inherit; }
+
+/*  */
 .Main {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   height: 100vh;
   margin: 0 auto; }
   .Main .p1 {
@@ -42,10 +52,17 @@ html, body {
       width: 60px;
       height: 60px;
       border-radius: 50%; }
-    .Main .p1 #menu {
+    .Main .p1 .menu {
       position: relative;
-      top: 10px;
-      cursor: pointer; }
+      width: 290px; }
+      .Main .p1 .menu #menu {
+        position: absolute;
+        top: 10px;
+        cursor: pointer; }
+      .Main .p1 .menu .details {
+        position: absolute;
+        top: 50px;
+        font-size: 12px; }
     .Main .p1 .title {
       position: absolute;
       top: 50%;
@@ -58,20 +75,63 @@ html, body {
         font-weight: bold;
         font-size: 2em; }
   .Main .p2 {
-    padding: 0 100px;
-    padding-top: 60px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; }
+    .Main .p2 .left, .Main .p2 .center, .Main .p2 .right, .Main .p2 .edge {
+      padding: 0 30px;
+      align-items: center; }
+      .Main .p2 .left h3, .Main .p2 .center h3, .Main .p2 .right h3, .Main .p2 .edge h3 {
+        font-size: 6em;
+        font-weight: 800; }
+        .Main .p2 .left h3 span, .Main .p2 .center h3 span, .Main .p2 .right h3 span, .Main .p2 .edge h3 span {
+          padding-left: 10px;
+          font-size: 1rem; }
+      .Main .p2 .left p, .Main .p2 .center p, .Main .p2 .right p, .Main .p2 .edge p {
+        padding-top: 10px;
+        font-size: 1.6em;
+        font-weight: 600;
+        word-break: break-all;
+        color: #3d474e; }
+  .Main .p3 {
+    padding-top: 160px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column; }
-    .Main .p2 .map img {
-      height: 300px;
-      border: 20px solid #EEEEF3;
-      border-radius: 10px;
-      cursor: pointer; }
-  .Main .p3 {
-    padding-top: 100px;
-    display: flex;
-    justify-content: center; }
+    .Main .p3 .map {
+      padding-top: 20px; }
+      .Main .p3 .map img {
+        height: 400px;
+        cursor: pointer; }
+  .Main .p4 {
+    padding-top: 120px; }
+    .Main .p4 .card {
+      padding-top: 40px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .Main .p4 .card img {
+        max-height: 500px;
+        margin-bottom: 10px; }
+      .Main .p4 .card p {
+        font-size: 1.2em;
+        color: gray;
+        margin-bottom: 20px;
+        text-align: center;
+        max-width: 500px; }
+        .Main .p4 .card p a {
+          font-size: 1.4em;
+          display: inline-block;
+          font-weight: 800;
+          color: royalblue;
+          margin: 10px 0;
+          text-decoration: none; }
+          .Main .p4 .card p a i {
+            font-size: 1em; }
+  .Main .p5 {
+    padding-top: 80px; }
 
 /*# sourceMappingURL=style.css.map */
