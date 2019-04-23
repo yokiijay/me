@@ -7,12 +7,15 @@
   <title>左脑设计，右脑编程的于谦</title>
   <link href="https://cdn.bootcss.com/minireset.css/0.0.2/minireset.css" rel="stylesheet">
   <link rel="stylesheet" href="src/css/style.css">
-  <link rel="stylesheet" href="//at.alicdn.com/t/font_1156647_nr85yxezhrj.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1156647_6r5gevexkjx.css">
   <link rel="icon" href="https://t1.picb.cc/uploads/2019/04/22/VYIjQc.th.jpg">
   <script src="https://cdn.bootcss.com/zooming/2.1.1/zooming.min.js"></script>
 </head>
 <body>
   <div class="Main">
+    <div id="next">
+      <i class="iconfont icon-arrowsdown"></i>
+    </div>
     <div class="p1">
       <div class="row space-between item-center">
         <div class="row item-center">
@@ -234,6 +237,11 @@
 
     $('#send').click(()=>{
       alert('邮箱: yokiijay@qq.com \n 短信: 17373166570 \n QQ: 404643063 \n Wechat: yokiijay')
+    })
+    $(document).scroll(function (){
+      if($(this).scrollTop()>300){
+        $('#next').css('display','none')
+      }
     })
   </script>
 </body>

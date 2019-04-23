@@ -38,6 +38,18 @@ a{
   height: 100vh;
   // background: rgba(65, 105, 225, 0.123);
   margin: 0 auto;
+  #next{
+    position: absolute;
+    top: 90%;
+    left:50%;
+    transform: translateX(-50%);
+    i{font-size: 50px;color: gray;}
+    @keyframes opacity{
+      from{ opacity: 0 }
+      to{ opacity: 1 }
+    }
+    animation: opacity 2s infinite;
+  }
 
   .p1{
     height: 100vh;
