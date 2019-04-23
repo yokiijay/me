@@ -133,5 +133,48 @@ a {
             font-size: 1em; }
   .Main .p5 {
     padding-top: 80px; }
+    .Main .p5 .QA {
+      align-items: center;
+      max-width: 800px; }
+      .Main .p5 .QA p {
+        margin: 5px 0; }
+      .Main .p5 .QA .Q {
+        background: rgba(197, 207, 238, 0.288);
+        padding: 8px 50px;
+        border-radius: 100px;
+        max-width: 800px;
+        align-self: flex-start; }
+      .Main .p5 .QA .A {
+        background: #96eb41;
+        padding: 8px 50px;
+        border-radius: 100px;
+        max-width: 800px;
+        align-self: flex-end; }
+      .Main .p5 .QA .hired {
+        margin-top: 20px;
+        width: 100%;
+        height: 80px;
+        background: rgba(197, 207, 238, 0.288);
+        padding: 10px 60px; }
+        .Main .p5 .QA .hired span {
+          display: inline-block;
+          font-size: 1.4em; }
+        .Main .p5 .QA .hired .come {
+          background: white;
+          width: 100%;
+          border-radius: 4px;
+          display: flex;
+          align-items: center;
+          padding-left: 30px; }
+        .Main .p5 .QA .hired .send {
+          border-radius: 4px;
+          background: #0fdb75;
+          width: 20%;
+          margin-left: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
