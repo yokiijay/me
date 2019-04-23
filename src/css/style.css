@@ -138,13 +138,13 @@ a {
       max-width: 800px; }
       .Main .p5 .QA p {
         margin: 5px 0; }
-      .Main .p5 .QA .Q {
+      .Main .p5 .QA .A {
         background: rgba(197, 207, 238, 0.288);
         padding: 8px 50px;
         border-radius: 100px;
         max-width: 800px;
         align-self: flex-start; }
-      .Main .p5 .QA .A {
+      .Main .p5 .QA .Q {
         background: #96eb41;
         padding: 8px 50px;
         border-radius: 100px;
@@ -169,7 +169,7 @@ a {
         .Main .p5 .QA .hired .send {
           border-radius: 4px;
           background: #0fdb75;
-          width: 20%;
+          width: 24%;
           margin-left: 20px;
           display: flex;
           justify-content: center;
